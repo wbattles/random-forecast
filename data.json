@@ -1,0 +1,72 @@
+{
+    "@context": {
+        "@version": "1.1",
+        "wx": "https://api.weather.gov/ontology#",
+        "s": "https://schema.org/",
+        "geo": "http://www.opengis.net/ont/geosparql#",
+        "unit": "http://codes.wmo.int/common/unit/",
+        "@vocab": "https://api.weather.gov/ontology#",
+        "geometry": {
+            "@id": "s:GeoCoordinates",
+            "@type": "geo:wktLiteral"
+        },
+        "city": "s:addressLocality",
+        "state": "s:addressRegion",
+        "distance": {
+            "@id": "s:Distance",
+            "@type": "s:QuantitativeValue"
+        },
+        "bearing": {
+            "@type": "s:QuantitativeValue"
+        },
+        "value": {
+            "@id": "s:value"
+        },
+        "unitCode": {
+            "@id": "s:unitCode",
+            "@type": "@id"
+        },
+        "forecastOffice": {
+            "@type": "@id"
+        },
+        "forecastGridData": {
+            "@type": "@id"
+        },
+        "publicZone": {
+            "@type": "@id"
+        },
+        "county": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://api.weather.gov/points/38.5805,-121.5302",
+    "@type": "wx:Point",
+    "geometry": "POINT(-121.5302 38.5805)",
+    "cwa": "STO",
+    "forecastOffice": "https://api.weather.gov/offices/STO",
+    "gridId": "STO",
+    "gridX": 40,
+    "gridY": 69,
+    "forecast": "https://api.weather.gov/gridpoints/STO/40,69/forecast",
+    "forecastHourly": "https://api.weather.gov/gridpoints/STO/40,69/forecast/hourly",
+    "forecastGridData": "https://api.weather.gov/gridpoints/STO/40,69",
+    "observationStations": "https://api.weather.gov/gridpoints/STO/40,69/stations",
+    "relativeLocation": {
+        "city": "West Sacramento",
+        "state": "CA",
+        "geometry": "POINT(-121.548663 38.5543679)",
+        "distance": {
+            "unitCode": "wmoUnit:m",
+            "value": 3319.6485882895
+        },
+        "bearing": {
+            "unitCode": "wmoUnit:degree_(angle)",
+            "value": 28
+        }
+    },
+    "forecastZone": "https://api.weather.gov/zones/forecast/CAZ017",
+    "county": "https://api.weather.gov/zones/county/CAC113",
+    "fireWeatherZone": "https://api.weather.gov/zones/fire/CAZ217",
+    "timeZone": "America/Los_Angeles",
+    "radarStation": "KDAX"
+}
